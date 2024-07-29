@@ -1,0 +1,99 @@
+* {
+	background: rgb(22, 22, 22);
+	color: rgb(255, 255, 255);
+}
+
+.row {
+  padding: 5px;
+}
+.film-app > .row {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+  max-height: 100%;
+  height: 100%;
+}
+
+.list > div {
+  width: 200px;
+  margin: 10px;
+  max-height: 350px;
+  height: 350px;
+}
+
+/* razmisli zelis li ovo i dodaj za Firefox ne samo za Chrome */
+.row::-webkit-scrollbar {
+  display: none;
+}
+
+.search {
+  width: 50%;
+  float: right;
+}
+
+.image-container {
+  position: relative;
+  width: 200px;
+  height: 300px;
+  transform: 0.4s;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.image-container:hover {
+  cursor: pointer;
+  transform: scale(1.15);
+}
+
+.liked {
+  position: absolute;
+  transition: 0.5s ease-in;
+  bottom: 0;
+  width: 100%;
+  height: 50%;
+  opacity: 0;
+  text-align: center;
+  background: rgb(0, 0, 0);
+}
+
+.info {
+  position: absolute;
+  transition: 0.5s ease-in;
+  top: 0;
+  width: 100%;
+  height: 50%;
+  opacity: 0;
+  text-align: center;
+  background: rgb(0, 0, 0);
+}
+
+.image-container:hover .liked {
+  opacity: 0.75;
+}
+
+.image-container:hover .info {
+  opacity: 0.75;
+}
+
+.img-modal {
+  max-height: 90%;
+}
+
+.sort-button:hover {
+  cursor: pointer;
+}
+
+.add-button:hover {
+  cursor: pointer;
+}
+
+.add-button {
+  float: right;
+}
